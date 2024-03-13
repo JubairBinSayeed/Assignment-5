@@ -96,7 +96,7 @@
             <div class=" absolute">
               <img src="images/bus.png" alt="" width="100px" height="50px" class="ml-20  ">    
             </div>
-            <p class="text-lg font-medium bg-lime-100 flex p-3 rounded-lg text-green-500 absolute ml-96 left-56" style="font-family: Inter, sans-serif;"><img src="images/seat-green.png" alt="" ><span id="seat-count">8</span> Seats left</p>
+            <p class="text-lg font-medium bg-lime-100 flex p-3 rounded-lg text-green-500 absolute ml-96 left-56" style="font-family: Inter, sans-serif;"><img src="images/seat-green.png" alt="" ><span id="budget">8</span> Seats left</p>
             <h2 class="card-title text-3xl font-bold ml-64">Greenline Paribahan</h2>
             <p class="font-normal text-lg ml-64" style="font-family: Inter, sans-serif;">Coach-009-WEB ! AC_Business</p>
             <div class="bg-stone-100 text-lg font-semibold ml-72 mr-56 p-20 rounded-lg mb-10">
@@ -123,18 +123,16 @@
     <hr>  
     </div>
       <div class="card card-side ">
-        <div>
-        <button class="btn pl-5 pr-5" id="A1">A1</button>
-        <button class="btn pl-5 pr-5" id="A2">A2</button>
-        <button class="btn ml-10 pl-5 pr-5" id="A3">A3</button>
-        <button class="btn pl-5 mr-10" id="A4">A4</button>
-        </div>
-        <br>
-        <div>
-          <button class="btn pl-5 pr-5" id="B1">B1</button>
-          <button class="btn pl-5 pr-5" id="B2">B2</button>
-          <button class="btn ml-10 pl-5 pr-5" id="B3">B3</button>
-          <button class="btn pl-5 pr-5" id="B4">B4</button>
+        <div >
+        <button class="btn pl-5 pr-5 allBtn" id="A1">A1</button>
+        <button class="btn pl-5 pr-5 allBtn" id='A2'>A2</button>
+        <button class="btn ml-10 pl-5 pr-5 allBtn" id="A3">A3</button>
+        <button class="btn pl-5 mr-10 allBtn" id="A4">A4</button>
+
+          <button class="btn pl-5 pr-5 allBtn" id="B1">B1</button>
+          <button class="btn pl-5 pr-5 allBtn" id="B2">B2</button>
+          <button class="btn ml-10 pl-5 pr-5 allBtn" id="B3">B3</button>
+          <button class="btn pl-5 pr-5 allBtn" id="B4">B4</button>
           </div> 
         <div class="card-body">
           <h1 class="card-title font-semibold">Select your Seat</h1>
@@ -143,6 +141,9 @@
               <p>Seat <span id="cart" class="bg-green-500 rounded-full text-white">0</span></p>
               <p id="Class">Class</p>
               <p id="Price">Price</p>
+            </div>
+            <div id="show-bus-number">
+              
             </div>
             <hr>
             <div>
@@ -157,11 +158,9 @@
             </div>
             </div>
           </div>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Watch</button>
-          </div>
         </div>
       </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
